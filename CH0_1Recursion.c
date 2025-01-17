@@ -14,7 +14,10 @@ int factorial(int num){
     // recursive case
     else
     {
+        
         return num*factorial(num-1);
+        // count++;
+        // printf("\n%d", count);
     }
 }
 
