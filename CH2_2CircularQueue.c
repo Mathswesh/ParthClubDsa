@@ -34,6 +34,17 @@ void enqueue(struct CQ *q , int number) {
     printf("%d", q->cqueue[q->rear]); 
 }
 
+void dequeue(struct CQ *q) {
+    if(isEmpty(q)) {
+        printf("\nCQ is Empty.");
+    }
+    int value = q->cqueue[q->front];
+    if (q->front == q->rear) {
+        q->front =-1;
+    }
+    q->front = (q->front+1)%size;
+    printf("%d",value);   
+}
 
 int main()
 {
@@ -54,6 +65,8 @@ int main()
             case 1: printf("\nEnter the Element : ");
                     scanf("%d",&number);
                     enqueue(&q,number);
+                    break;
+            case 2 :dequeue(&q); 
                     break;
 
         default:
