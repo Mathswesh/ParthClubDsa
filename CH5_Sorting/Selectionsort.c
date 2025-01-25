@@ -1,7 +1,7 @@
 /*
     Author : Agnivsh Patel
     Date : 24 jan 2025
-    Objective : Bubble Sort
+    Objective : Selection Sort
 */
 #include <stdio.h>
 
